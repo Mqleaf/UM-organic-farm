@@ -4,6 +4,8 @@
 
 基于BootStrap/ jQuery/PHP/MySQL搭建的Web全站，实现注册、登录、商品列表、购物车和订单多种功能。
 
+链接（最终效果）：http://1.muliping.applinzi.com/farm/ 
+
 
 【文件结构】
 
