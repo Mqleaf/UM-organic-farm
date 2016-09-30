@@ -1,0 +1,15 @@
+.panel-title{
+    font-weight: bold;
+}
+.panel-body{
+    font-size: 1.6rem;margin-bottom: 0.5rem
+}
+.number{
+    width:8rem;
+}
+.container .thumbnail {
+    border: none;
+}
+h6{
+    color: #c94408;
+}
