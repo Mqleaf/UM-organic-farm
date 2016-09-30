@@ -1,6 +1,8 @@
 # UM-organic-farm
 【项目介绍】
 基于BootStrap/ jQuery/PHP/MySQL搭建的Web全站，分为注册、登录、商品列表、购物车和订单多个功能模块。
+
+
 【文件结构】
 Farm
 |__welcome.php(未登录主页)
@@ -13,32 +15,34 @@ Farm
 |__process.php(付款后处理结果页面)
 
 |__ Admin(功能管理)
-|__ Register.php（注册类,处理注册表单）
-|__ Login.php（登录类，处理登录表单）
-|__ Logout.php（退出，返回welcome.php）
-|__ Captcha.php（验证码类，生成验证码）
-|__config.php（数据库配置:主机，数据库名，用户名，密码）
-|__font
+	|__ Register.php（注册类,处理注册表单）
+	|__ Login.php（登录类，处理登录表单）
+	|__ Logout.php（退出，返回welcome.php）
+	|__ Captcha.php（验证码类，生成验证码）
+	|__config.php（数据库配置:主机，数据库名，用户名，密码）
+	|__font
 		|__consola.ttf（验证码使用的字体）
-|__cart（购物车、商品、订单）
+	|__cart（购物车、商品、订单）
 		|__product_sc_fns.php(导入所有函数文件)
-|__db_fns.php(连接数据库的函数)
-|__output_fns.php(输出HTML的函数)
-|__product_fns.php(保存和获取商品数据的函数)
-|__order_fns.php(保存和获取订单数据的函数)
-|__validate_fns.php(验证送货表单和付款表单的函数)
-|__web.sql（数据库文件）
+	|__db_fns.php(连接数据库的函数)
+	|__output_fns.php(输出HTML的函数)
+	|__product_fns.php(保存和获取商品数据的函数)
+	|__order_fns.php(保存和获取订单数据的函数)
+	|__validate_fns.php(验证送货表单和付款表单的函数)
+	|__web.sql（数据库文件）
 
 |__ Public
-|__css
-|__ fonts
-|__ img
-|__js
-|__layout（页面基本布局）
-|__form（注册登录表单）
-|__header（各页面header）
-|__header（主页内容）
-|__nav（各页面导航栏）
+	|__css
+	|__ fonts
+	|__ img
+	|__js
+	|__layout（页面基本布局）
+	|__form（注册登录表单）
+	|__header（各页面header）
+	|__header（主页内容）
+	|__nav（各页面导航栏）
+	
+	
 【功能模块】
 1.	数据库
 --user表格：id（主键）,username,email,password,用于存储用户信息。
