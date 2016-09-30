@@ -2,7 +2,7 @@
 
 【项目介绍】
 
-基于BootStrap/ jQuery/PHP/MySQL搭建的Web全站，分为注册、登录、商品列表、购物车和订单多个功能模块。
+基于BootStrap/ jQuery/PHP/MySQL搭建的Web全站，实现注册、登录、商品列表、购物车和订单多种功能。
 
 
 【文件结构】
