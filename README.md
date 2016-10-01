@@ -1,5 +1,7 @@
 # UM-organic-farm
 
+每个码农都有一个农场，只有春耕夏耘，才得秋收冬藏。
+
 【项目介绍】
 
 基于BootStrap/ jQuery/PHP/MySQL搭建的Web全站，实现注册、登录、商品列表、购物车和订单多种功能。
