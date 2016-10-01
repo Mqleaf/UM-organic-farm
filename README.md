@@ -50,17 +50,17 @@ Farm
 	
 		|__product_sc_fns.php(导入所有函数文件)
 		
-	|__db_fns.php(连接数据库的函数)
+		|__db_fns.php(连接数据库的函数)
 	
-	|__output_fns.php(输出HTML的函数)
+		|__output_fns.php(输出HTML的函数)
 	
-	|__product_fns.php(保存和获取商品数据的函数)
+		|__product_fns.php(保存和获取商品数据的函数)
 	
-	|__order_fns.php(保存和获取订单数据的函数)
+		|__order_fns.php(保存和获取订单数据的函数)
 	
-	|__validate_fns.php(验证送货表单和付款表单的函数)
+		|__validate_fns.php(验证送货表单和付款表单的函数)
 	
-	|__web.sql（数据库文件）
+		|__web.sql（数据库文件）
 
 |__ Public
 
