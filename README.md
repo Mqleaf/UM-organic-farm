@@ -13,74 +13,74 @@
 
 Farm
 
-|__welcome.php(未登录主页)
+	|__welcome.php(未登录主页)
 
-|__ index.php（已登录主页）
+	|__ index.php（已登录主页）
 
-|__ show_category.php(商品列表页面)
+	|__ show_category.php(商品列表页面)
 
-|__ show_product.php(商品详情页面)
+	|__ show_product.php(商品详情页面)
 
-|__ cart.php（购物车页面）
-
-|__checkout.php(总计页面，含送货表单)
-
-|__purchase.php(付款页面，含付款表单)
-
-|__process.php(付款后处理结果页面)
-
-
-|__ Admin(功能管理)
-
-	|__ Register.php（注册类,处理注册表单）
+	|__ cart.php（购物车页面）
 	
-	|__ Login.php（登录类，处理登录表单）
+	|__checkout.php(总计页面，含送货表单)
+
+	|__purchase.php(付款页面，含付款表单)
+
+	|__process.php(付款后处理结果页面)
+
+
+	|__ Admin(功能管理)
+
+		|__ Register.php（注册类,处理注册表单）
 	
-	|__ Logout.php（退出，返回welcome.php）
+		|__ Login.php（登录类，处理登录表单）
 	
-	|__ Captcha.php（验证码类，生成验证码）
+		|__ Logout.php（退出，返回welcome.php）
 	
-	|__config.php（数据库配置:主机，数据库名，用户名，密码）
+		|__ Captcha.php（验证码类，生成验证码）
 	
-	|__font
+		|__config.php（数据库配置:主机，数据库名，用户名，密码）
 	
-		|__consola.ttf（验证码使用的字体）
+		|__font
+	
+			|__consola.ttf（验证码使用的字体）
 		
-	|__cart（购物车、商品、订单）
+		|__cart（购物车、商品、订单）
 	
-		|__product_sc_fns.php(导入所有函数文件)
+			|__product_sc_fns.php(导入所有函数文件)
 		
-		|__db_fns.php(连接数据库的函数)
+			|__db_fns.php(连接数据库的函数)
 	
-		|__output_fns.php(输出HTML的函数)
+			|__output_fns.php(输出HTML的函数)
 	
-		|__product_fns.php(保存和获取商品数据的函数)
+			|__product_fns.php(保存和获取商品数据的函数)
 	
-		|__order_fns.php(保存和获取订单数据的函数)
+			|__order_fns.php(保存和获取订单数据的函数)
 	
-		|__validate_fns.php(验证送货表单和付款表单的函数)
+			|__validate_fns.php(验证送货表单和付款表单的函数)
 	
-		|__web.sql（数据库文件）
+			|__web.sql（数据库文件）
 
-|__ Public
+	|__ Public
 
-	|__css
+		|__css
 	
-	|__ fonts
+		|__ fonts
 	
-	|__ img
+		|__ img
 	
-	|__js
+		|__js
 	
-	|__layout（页面基本布局）
+		|__layout（页面基本布局）
 	
-	|__form（注册登录表单）
+		|__form（注册登录表单）
 	
-	|__header（各页面header）
+		|__header（各页面header）
 	
-	|__header（主页内容）
+		|__header（主页内容）
 	
-	|__nav（各页面导航栏）
+		|__nav（各页面导航栏）
 	
 	
 【功能模块】
@@ -100,19 +100,19 @@ Farm
 
 --所有页面共用的模块，PHP根据SESSION中有无用户信息生成不同的导航，实现未登录和已登录页面（welcome.php/index.php）。
 
---BootStrap（$(this).tab('show');）只能控制同一个页面下几个导航的激活样式，点击进入购物车页面时，发现仍然是home默认激活状态。所以，用PHP超全局变量$_SERVER['PHP_SELF']==' /farm/welcome.php'?'active':''判断当前所在页面，给对应导航项增加默认激活样式。
+--BootStrap（$(this).tab('show');）只能控制同一个页面下几个导航的激活样式，点击进入购物车页面时，发现仍然是home默认激活状态。所以，用PHP超全局变量<code>$_SERVER['PHP_SELF']==' /farm/welcome.php'?'active':'' </code>判断当前所在页面，给对应导航项增加默认激活样式。
 
 3.验证码类
 
-验证码（颜色均随机生成）
+	验证码（颜色均随机生成）
 
-|__图像（宽、高、背景颜色）
+	|__图像（宽、高、背景颜色）
 
-|__字符（字符集string、字符数codeNum、字符code、字体文件路径font、字体大小fontSize、角度、位置、颜色），code需要保存到$_SESSION[‘code’]中。
+	|__字符（字符集string、字符数codeNum、字符code、字体文件路径font、字体大小fontSize、角度、位置、颜色），code需要保存到$_SESSION[‘code’]中。
 
-|__干扰线（数量、起点位置、终点位置、颜色）
+	|__干扰线（数量、起点位置、终点位置、颜色）
 
-|__干扰点（数量、位置、颜色）
+	|__干扰点（数量、位置、颜色）
 
 --显示验证码函数：图->字->线->点，首部字段定义类型为png,输出图片png格式，删除图片。
 
