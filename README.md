@@ -6,7 +6,10 @@
 
 基于BootStrap/ jQuery/PHP/MySQL搭建的Web全站，实现注册、登录、商品列表、购物车和订单多种功能。
 
-链接（最终效果）：http://1.muliping.applinzi.com/farm/ 
+链接：http://1.muliping.applinzi.com/farm/ 
+
+效果图：
+<img src="https://github.com/Mqleaf/UM-organic-farm/blob/master/farm_display/farm.png">
 
 
 【文件结构】
@@ -84,6 +87,8 @@ Farm
 	
 	
 【功能模块】
+<img src="https://github.com/Mqleaf/UM-organic-farm/blob/master/farm_display/farm_3.png">
+
 1.数据库
 
 --user表格：id（主键）,username,email,password,用于存储用户信息。
